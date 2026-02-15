@@ -5,21 +5,21 @@
 class SkillLoop < Formula
   desc "An agentic skill orchestrator powered by Claude Code"
   homepage "https://github.com/takumiyoshikawa/skill-loop"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/takumiyoshikawa/skill-loop/releases/download/v0.2.0/skill-loop_0.2.0_darwin_amd64.tar.gz"
-      sha256 "db16c44a8121df97a5ca7fcfa3cfb396614cc6ed7f9ab207cc7303976b7b313c"
+      url "https://github.com/takumiyoshikawa/skill-loop/releases/download/v0.3.0/skill-loop_0.3.0_darwin_amd64.tar.gz"
+      sha256 "cdb2391f93159de85bbccc720e9d7afc212c0815d5a836f090d947db4dd962c1"
 
       def install
         bin.install "skill-loop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/takumiyoshikawa/skill-loop/releases/download/v0.2.0/skill-loop_0.2.0_darwin_arm64.tar.gz"
-      sha256 "3de05a5502426efa20616cfa40435f38b211aee67e537acbeacc7cc1662ae2bc"
+      url "https://github.com/takumiyoshikawa/skill-loop/releases/download/v0.3.0/skill-loop_0.3.0_darwin_arm64.tar.gz"
+      sha256 "fefc3651f38a73481e5ab45ba9f9823dde35c6ad62e3ae0dd59d6a9a91686391"
 
       def install
         bin.install "skill-loop"
@@ -29,15 +29,15 @@ class SkillLoop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/takumiyoshikawa/skill-loop/releases/download/v0.2.0/skill-loop_0.2.0_linux_amd64.tar.gz"
-      sha256 "fa380b1d49a7a076ad8c777e5b0b1200bccd1e34daa9a96e69061565efd9ade0"
+      url "https://github.com/takumiyoshikawa/skill-loop/releases/download/v0.3.0/skill-loop_0.3.0_linux_amd64.tar.gz"
+      sha256 "81914d1d95af144d488b7de06a93ff16ac7fed88e5ad7e243d4b40726ea45a60"
       def install
         bin.install "skill-loop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/takumiyoshikawa/skill-loop/releases/download/v0.2.0/skill-loop_0.2.0_linux_arm64.tar.gz"
-      sha256 "401af932b40db4fd85a2300978a3f21936baf351a0aa058d4960edfa88de3963"
+      url "https://github.com/takumiyoshikawa/skill-loop/releases/download/v0.3.0/skill-loop_0.3.0_linux_arm64.tar.gz"
+      sha256 "9ae1f89c74204f86833053a36932be6474beb060c8893ee9b3089f8b896d56ca"
       def install
         bin.install "skill-loop"
       end
